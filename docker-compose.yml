@@ -12,3 +12,5 @@ elk:
     - "5601:5601"
     - "9200:9200"
     - "5044:5044"
+  volumes:
+    - quay-data:/var/lib/elasticsearch
