@@ -14,3 +14,10 @@ elk:
     - "5044:5044"
   volumes:
     - quay-data:/var/lib/elasticsearch
+
+redis:
+  image: "redis:alpine"
+  ports:
+    - "6379:6379"
+  volumes:
+    - redis-data:/data
